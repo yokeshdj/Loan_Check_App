@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>User Details</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://live.zwidgets.com/js-sdk/1.2/ZohoEmbededAppSDK.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="add-flex">
+      <div class="details">
+        <h2>User Details</h2>
+        <h3>Basic Details</h3>
+        <p><strong>Name : </strong> <span id="name"></span></p>
+        <p><strong>Email : </strong> <span id="email"></span></p>
+        <p><strong>PAN ID : </strong> <span id="panId"></span></p>
+        <p><strong>Address :</strong> <span id="address"></span></p>
+        <!-- Add more fields as needed -->
+      </div>
+      <div class="container1">
+        <div id="plotly-visualization"></div>
+      </div>
+    </div>
+    <div class="loan-history">
+      <h2>Loan History</h2>
+      <div class="loan-history-table">
+        <table>
+          <thead>
+            <tr>
+              <th>S. No</th>
+              <th>Bank Name</th>
+              <th>Loan Amount</th>
+              <th>Loan Requested Date</th>
+              <th>Loan Issued Date</th>
+              <th>Loan Due Date</th>
+              <th>EMI Paid on</th>
+              <th>Loan Ends On</th>
+              <th>Loan Status</th>
+              <!-- Add other table headers for loan details -->
+            </tr>
+          </thead>
+          <tbody id="loanHistoryTableBody">
+            <!-- Loan data will be dynamically populated here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button id="button1" onclick="closePopup()">Decline</button>
+    <button id="button2" onclick="moveToNextState()">Approve</button>
+  </div>
+</body>
+
+</html>
