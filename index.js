@@ -155,6 +155,7 @@ function processLoanHistory(loanHistory) {
 
         loanHistoryTableBody.appendChild(row);
     });
-    creditScore = creditScore ? creditScore : generateRandomCreditScore();
+    // creditScore = creditScore ? creditScore : generateRandomCreditScore();
+    creditScore = 400;
     displayCibilScoreGauge(creditScore);
 }
