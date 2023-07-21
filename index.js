@@ -148,7 +148,7 @@ function processLoanHistory(loanHistory) {
         loanStatus.textContent = loan.Loan_Status;
         row.appendChild(loanStatus);
 
-        if (loan.Loan_Status === 'Defaults') {
+        if (loan.Loan_Status === 'Default') {
             row.classList.add('default-loan-row');
             creditScore = Math.floor(Math.random() * 350);
         }
